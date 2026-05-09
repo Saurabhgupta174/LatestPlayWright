@@ -8,7 +8,7 @@ test("should login successfully", async ({ page }) =>
     
 });
 
-test("Login Funactinality", async ({ page }) => 
+test.only("Login Funactinality", async ({ page }) => 
 {
     await page.goto("https://www.saucedemo.com/");
     await page.locator("##user-name").fill("standard_user");
